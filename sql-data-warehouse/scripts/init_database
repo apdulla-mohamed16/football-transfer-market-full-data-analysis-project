@@ -1,0 +1,38 @@
+/*
+===============================================================================
+Create Database and Schemas
+===============================================================================
+Script Purpose:
+    Creates the 'FootballTransfers' database and the three Medallion schemas:
+    bronze, silver and gold.
+
+WARNING:
+    If the database already exists it is DROPPED and recreated.
+    All data in it will be permanently deleted. Run only once at the start.
+===============================================================================
+*/
+
+USE master;
+GO
+
+IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'FootballTransfers')
+BEGIN
+    ALTER DATABASE FootballTransfers SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+    DROP DATABASE FootballTransfers;
+END;
+GO
+
+CREATE DATABASE FootballTransfers;
+GO
+
+USE FootballTransfers;
+GO
+
+CREATE SCHEMA bronze;
+GO
+
+CREATE SCHEMA silver;
+GO
+
+CREATE SCHEMA gold;
+GO
