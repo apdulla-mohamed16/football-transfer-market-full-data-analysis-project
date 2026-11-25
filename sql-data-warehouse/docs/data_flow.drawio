@@ -1,0 +1,169 @@
+<mxfile host="Electron" agent="claude">
+  <diagram name="2 - Data Flow" id="page2">
+    <mxGraphModel dx="1564" dy="1056" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;fontStyle=3;sketch=1;curveFitting=1;jiggle=2;shadow=1;" value="Data Flow (data lineage)" vertex="1">
+          <mxGeometry height="70" width="1500" x="100" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#f8cecc;strokeColor=#b85450;verticalAlign=top;fontStyle=3;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;" value="Sources" vertex="1">
+          <mxGeometry height="640" width="230" x="100" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="" vertex="1">
+          <mxGeometry height="640" width="260" x="475" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="" vertex="1">
+          <mxGeometry height="640" width="260" x="858" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="" vertex="1">
+          <mxGeometry height="640" width="330" x="1270" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="Bronze Layer" vertex="1">
+          <mxGeometry height="36" width="260" x="475" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="Silver Layer" vertex="1">
+          <mxGeometry height="36" width="260" x="858" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="Gold Layer" vertex="1">
+          <mxGeometry height="36" width="330" x="1270" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="Transfermarkt&lt;br&gt;CSV files" vertex="1">
+          <mxGeometry height="80" width="150" x="140" y="362" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="competitions" vertex="1">
+          <mxGeometry height="44" width="200" x="505" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="competitions" vertex="1">
+          <mxGeometry height="44" width="200" x="888" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" edge="1" parent="1" source="c10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" edge="1" parent="1" source="c11" style="edgeStyle=none;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="clubs" vertex="1">
+          <mxGeometry height="44" width="200" x="505" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="clubs" vertex="1">
+          <mxGeometry height="44" width="200" x="888" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" edge="1" parent="1" source="c10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" edge="1" parent="1" source="c15" style="edgeStyle=none;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="players" vertex="1">
+          <mxGeometry height="44" width="200" x="505" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="players" vertex="1">
+          <mxGeometry height="44" width="200" x="888" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" edge="1" parent="1" source="c10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" edge="1" parent="1" source="c19" style="edgeStyle=none;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="player_valuations&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Bronze Layer&lt;/span&gt;" vertex="1">
+          <mxGeometry height="44" width="190" x="505" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="player_valuations&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Silver Layer&lt;/span&gt;" vertex="1">
+          <mxGeometry height="44" width="200" x="888" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" edge="1" parent="1" source="c10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" edge="1" parent="1" source="c23" style="edgeStyle=none;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c24" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="transfers" vertex="1">
+          <mxGeometry height="44" width="200" x="505" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="transfers" vertex="1">
+          <mxGeometry height="44" width="200" x="888" y="494" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" edge="1" parent="1" source="c10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c27" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" edge="1" parent="1" source="c27" style="edgeStyle=none;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c28" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="games" vertex="1">
+          <mxGeometry height="44" width="200" x="505" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="games" vertex="1">
+          <mxGeometry height="44" width="200" x="888" y="574" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" edge="1" parent="1" source="c10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c31" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" edge="1" parent="1" source="c31" style="edgeStyle=none;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c32" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="appearances" vertex="1">
+          <mxGeometry height="44" width="200" x="505" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="appearances" vertex="1">
+          <mxGeometry height="44" width="200" x="888" y="654" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" edge="1" parent="1" source="c10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c35" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" edge="1" parent="1" source="c35" style="edgeStyle=none;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c36" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="dim_competitions" vertex="1">
+          <mxGeometry height="44" width="270" x="1300" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="dim_clubs" vertex="1">
+          <mxGeometry height="44" width="270" x="1300" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="dim_players" vertex="1">
+          <mxGeometry height="44" width="270" x="1300" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="fact_player_valuations&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Gold Layer&lt;/span&gt;" vertex="1">
+          <mxGeometry height="44" width="240" x="1320" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="fact_transfers" vertex="1">
+          <mxGeometry height="44" width="270" x="1300" y="494" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="dim_date&lt;br&gt;&lt;span&gt;(generated calendar)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="270" x="1300" y="574" as="geometry" />
+        </mxCell>
+        <mxCell id="c45" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fontStyle=3" value="fact_appearances" vertex="1">
+          <mxGeometry height="44" width="270" x="1300" y="654" as="geometry" />
+        </mxCell>
+        <mxCell id="c46" edge="1" parent="1" source="c12" style="edgeStyle=none;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c39" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c47" edge="1" parent="1" source="c12" style="edgeStyle=none;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c40" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c48" edge="1" parent="1" source="c16" style="edgeStyle=none;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c40" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c49" edge="1" parent="1" source="c20" style="edgeStyle=none;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c41" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c50" edge="1" parent="1" source="c24" style="edgeStyle=none;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c42" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c51" edge="1" parent="1" source="c28" style="edgeStyle=none;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c43" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c52" edge="1" parent="1" source="c32" style="edgeStyle=none;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c45" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c53" edge="1" parent="1" source="c36" style="edgeStyle=none;html=1;endArrow=block;endFill=1;strokeColor=#b85450;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;fontStyle=3" target="c45" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c54" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=20;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=3" value="Report views (report_*) are built on top of the Gold dimensions and facts and feed Tableau." vertex="1">
+          <mxGeometry height="90" width="330" x="1275" y="830" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
